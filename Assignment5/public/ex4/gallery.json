@@ -1,0 +1,20 @@
+{
+    "1":
+    {
+        "dataSmall": "beach_small.jpg",
+        "dataBig": "beach.jpg",
+        "description": "Goleta Beach near UCSB Campus"
+    },
+    "2":
+    {
+        "dataSmall": "bus.jpg",
+        "dataBig": "bus_lg.jpg",
+        "description": "A hippy bus in Santa Barbara"
+    },
+    "3":
+    {
+        "dataSmall": "snail_small.jpg",
+        "dataBig": "snail.jpg",
+        "description": "A giant sea snail"
+    }
+}

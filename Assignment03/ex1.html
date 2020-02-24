@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <a href=https://en.wikipedia.org target="_new">
+        <img src=" https://cdn4.iconfinder.com/data/icons/country-flag-1/744/United_Kingdom-128.png">
+    </a>
+    <a href=" https://de.wikipedia.org" target="_new">
+        <img src=" https://cdn2.iconfinder.com/data/icons/country-flag-1/744/Austria-128.png">
+    </a>
+    <a href=" https://ja.wikipedia.org" target="_new">
+        <img src=" https://cdn4.iconfinder.com/data/icons/country-flag-1/744/Japan-128.png">
+    </a>
+</body>
+
+<script>
+    var link = document.getElementsByTagName("a")[1];
+    console.log(link.attributes["href"].nodeValue);  
+    console.log(link.getAttributeNode("href").nodeValue);  
+    console.log(link.href); 
+    console.log(link.firstChild); 
+    console.log(link.attributes[0].nodeType); 
+    console.log(link.firstChild.nodeType); 
+    console.log(link.parentNode.nodeName); 
+    console.log(link.lastChild.parentNode.nodeName); 
+    console.log(link.attributes.length);
+</script>
+
+</html>

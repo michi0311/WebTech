@@ -1,0 +1,15 @@
+#displayDIV {
+	display:none;  
+	background-color:silver; 
+	width:100vw; 
+	height:100vh; 
+	position:absolute; 
+	text-align:center;
+	top:0px; 
+	left:0px;
+}
+
+#displayDIV img.bigIMG {
+	margin-top: 20px;
+	height: calc(100% - 70px);	
+	}

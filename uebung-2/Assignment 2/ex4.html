@@ -1,0 +1,143 @@
+<html lang="de">
+	<head>
+		<title>CSS in Action</title>
+		<style>
+			header h1 {
+				font-family: Verdana; 
+				font-size: 2em; 
+				margin: 10px;
+			}
+			header {
+				background-color: rgb(187,204,232); 
+				display: flex;
+			}
+			#logoImage {
+				margin: 10px; 
+				height: 4em; 
+				margin-left: auto;
+			}
+			nav ul {
+				background-color: rgb(20, 90, 204); 
+				margin: 0px; 
+				padding: 10px 0px 10px 0px;
+			}
+			nav ul li{
+				display: inline; 
+				margin-right: 20px;
+			}
+			nav ul li:nth-child(2) {
+				color: red;
+			}
+			section:nth-child(2) h1 {
+				color: red;
+			}
+			div section h1 {
+				font-family: Verdana; 
+				font-size: 1.5em;
+			}
+			footer ul {
+				background-color: rgb(20, 90, 204); 
+				padding: 10px 0px; 
+				text-align: center;
+			}
+			footer ul li{
+				display: inline; 
+				margin-right: 20px;
+			}
+			a[href^=http]::after { 
+				content: ' (external)'; 
+			}
+			section img {
+				width: 100px; 
+				float: left;
+			}
+			section:nth-child(2n) img {
+				float: right;
+			}
+
+			@media screen and (max-width: 600px){
+				nav ul li{
+					font-family: Verdana;
+					font-weight: bold;
+					display: block;
+					text-align: center; 
+					background: lightgrey; 
+					margin: 11px 15px;
+					padding: 6px 2px;
+					border-radius: 15px;
+				}
+
+				section img {
+					display: none;
+				}
+				
+				footer ul li{
+					font-family: Verdana;
+					font-weight: bold;
+					display: inline; 
+					background: lightgrey;
+					margin: 11px 10px;
+					padding: 4px 6px;
+					border-radius: 15px;
+				}
+				footer ul{
+					padding: 15px 0px;
+				}
+			}
+
+			section {
+				display: block;
+			}
+
+
+		</style>
+	</head>
+	<body>
+	<header>
+		<h1>CSS in Action</h1>
+		<img id="logoImage" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg">
+	</header>
+	<nav>
+		<ul>
+			<li>Topic 1</li>
+			<li>Topic 2</li>
+			<li>Topic 3</li>
+			<li>Topic 4</li>
+		</ul>
+	</nav>
+	<div class="content">
+	<section>
+		<h1>Topic 1</h1>
+		<img src="pic1.jpg">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,  sed diam voluptua.
+		<p>
+		<strong>Lorem ipsum</strong> dolor sit <a href="http://www.aau.at" target="_blank">amet</a>, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam <a href="erat.html" target="_blank">erat</a>.
+		</p>
+	</section>
+	
+	<section>
+		<h1>Topic 2</h1>
+		<img src="pic2.jpg"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+		<p>
+		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <strong>nonumy</strong> eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit <a href="http://www.aau.at" target="_blank">amet</a>.
+		</p>
+	</section>
+	
+	<section>
+		<h1>Topic 3</h1>
+		<img src="pic3.jpg"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+		<p>
+		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+		</p>
+	</section>
+	</div>
+	<footer>
+		<ul>
+			<li>Impressum</li>
+			<li>Legal</li>
+			<li>Contact</li>
+		</ul>
+	</footer>
+	
+	</body>
+
+</html>

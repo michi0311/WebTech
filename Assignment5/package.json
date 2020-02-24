@@ -1,0 +1,14 @@
+{
+  "name": "assignment5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "simple-server.js",
+  "scripts": {
+    "test": "node simple-server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

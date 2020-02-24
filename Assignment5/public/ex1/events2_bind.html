@@ -1,0 +1,39 @@
+<html>
+<head>
+<style>
+#p1 {background-color:green;width:200px;height:200px}
+#p2 {background-color:red;width:200px;height:200px}
+</style>
+</head>
+<body>
+
+<div id="p1"></div>
+<div id="p2"></div>
+
+<script>
+
+
+class Person {
+	constructor(firstname, lastname, element) {
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.elem = element;
+		this.elem.addEventListener("click",this.sayHello.bind(this));
+	}
+
+	sayHello(e) {
+		console.log(e);		// explain me!
+		console.log(this);	// explain me!
+		this.elem.innerHTML = this.firstname;
+		this.elem.innerHTML += " "+this.lastname;
+	}
+}
+
+let person1= new Person("John","Doe",document.getElementById("p1"));
+let person2= new Person("Martina","Mustermann",document.getElementById("p2"));
+
+
+</script>
+</body>
+
+</html>

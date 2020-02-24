@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+
+
+
+</head>
+
+<body onload="registerListeners()">
+    <button id="myBtn">Click me</button>
+    <button id="myBtn2">2. Button</button>
+    <script>
+        
+            function incrementClickCount() {
+                let clickCount = 0;
+                return function(){
+                    return ++clickCount;
+                };
+            }
+         
+                var counter = incrementClickCount();
+                var counter2 = incrementClickCount();
+
+                document.getElementById("myBtn").addEventListener("click",function(){
+                    alert(counter())
+                });
+                document.getElementById("myBtn2").addEventListener("click",function(){
+                    alert(counter2())
+                });
+            
+        </script>
+</body>
+
+</html>

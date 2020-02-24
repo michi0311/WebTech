@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <style>
+        /* #content , p { color: red; }  */
+        /* #content p { color: red; }  */
+        /* #content h2 p { color: red; }  */
+        /* #content > p { color: red; }  */
+        /* #content h1 p { color: red; } */
+        /* div p:nth-child(2) { color: red; }  */
+        /* div p:nth-child(2n) { color: red; }  */
+        /* h2 {color: red;} */
+        /* div.othercontent > p:first-child { color:red; }  */
+        /* div.othercontent p:first-child + p { color:red; }  */
+        /* div.othercontent p:first-child ~ p { color:red; }  */
+        /* a[title^=”other”]:link { color:red; } */
+        /* body a[title^=other]:link { color:red; }  */
+        /* .othercontent * p {color: red;} */
+/* 
+        #content,
+        p {
+            color: red;
+        }
+
+        #content p {
+            color: red;
+        }
+
+        #content h2 p {
+            color: red;
+        }
+
+        #content>p {
+            color: red;
+        }
+
+        #content h1 p {
+            color: red;
+        }
+
+        div p:nth-child(2) {
+            color: red;
+        }
+
+        div p:nth-child(2n) {
+            color: red;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        div.othercontent>p:first-child {
+            color: red;
+        }
+
+        div.othercontent p:first-child+p {
+            color: red;
+        }
+
+        div.othercontent p:first-child~p {
+            color: red;
+        }
+
+        a[title^=”other”]:link {
+            color: red;
+        }
+
+        body a[title^=other]:link {
+            color: red;
+        }
+
+        .othercontent * p {
+            color: red;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <h2> This is some text </h2>
+    <div id="content">
+        <p> Text within paragraph 1 </p>
+        <p> text within paragraph 2 </p>
+        <h2>
+            <p> Text within paragraph in h2. </p>
+        </h2>
+        <h1>
+            <p> Text within h1 and p </p>
+        </h1>
+    </div>
+    <div class="othercontent">
+        <p> Text within p1</p>
+        <p> Text within p2</p>
+        <p> Text within p3</p>
+        <p> Text within p4</p>
+
+        <h2>
+            <p> Text within h2 within a paragraph</p>
+        </h2>
+        <h1>
+            <p> Text within h1 within a paragraph. </p>
+        </h1>
+    </div>
+
+    <p> Text in paragraph as a child of body</p> <a title="somelink" href="#">Some Link</a> <a title="otherlink"
+        href="#other">Some other Link</a>
+</body>
+
+</html>

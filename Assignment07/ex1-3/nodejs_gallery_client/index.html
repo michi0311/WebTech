@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Simple nodejs Gallery</title>
+      <script src="JsonGallery.js" defer="true"></script>
+      <script src="site.js" defer="true"></script>
+	  <link rel="stylesheet" href="gallery.css" />
+  </head>
+  <body>
+
+    <div id="userGreeting">
+        <h1>Hello guest!</h1>
+    </div>
+
+    <div id="loginForm">
+        <label for="email"><b>Email</b></label>
+        <input id="email" type="email" name="" value="" required>
+        <label for="password"><b>Password</b></label>
+        <input id="password" type="password" name="" value="" required>
+        <button type="button" name="button" onclick="login()">Login</button>
+        <div id="loginMessage"></div>
+    </div>
+
+    <div id="jsonGallery">
+
+    </div>
+
+  </body>
+</html>

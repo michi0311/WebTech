@@ -1,0 +1,26 @@
+{
+    "4":
+    {
+        "dataSmall": "lake_small.jpg",
+        "dataBig": "lake.jpg",
+        "description": "New Zealand lake in autumn"
+    },
+    "5":
+    {
+        "dataSmall": "lion_small.jpg",
+        "dataBig": "lion.jpg",
+        "description": "A lion at sunrise "
+    },
+    "6":
+    {
+        "dataSmall": "waterfalls_small.jpg",
+        "dataBig": "waterfalls.jpg",
+        "description": "Kuang si falls in Laos"
+    },
+	"7":
+    {
+        "dataSmall": "canyon_small.jpg",
+        "dataBig": "canyon.jpg",
+        "description": "Endless canyon landscape"
+    }
+}

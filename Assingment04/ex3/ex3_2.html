@@ -1,0 +1,38 @@
+<html>
+
+<head>
+
+    <script>
+
+const UNI = {
+names:["University of Vienna", "Medical University of Graz",
+"Medical University of Vienna", "Medical University of Innsbruck", "University of Klagenfurt"]};
+
+function toHTML(){
+    let ret = new Array();
+    for(entry in UNI.names){
+        var element = document.createElement("li");
+        element.setAttribute("class","name");
+        element.innerHTML = UNI.names[entry];
+        ret.push(element);
+    }
+    return ret;
+}
+
+function showMessage(){
+    var elements = toHTML();
+    var message = "";
+    for (element in elements){
+        message = message + elements[element].outerHTML;
+    }
+    alert(message);
+}
+
+    </script>
+</head>
+
+<body>
+    <button id="myBtn" onclick="showMessage()">Click Me</button>
+</body>
+
+</html>

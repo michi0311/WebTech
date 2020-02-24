@@ -1,0 +1,95 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    input:invalid {
+      color: red;
+    }
+
+    textarea:invalid {
+      color: red;
+    }
+
+    textarea {
+      width: 100vw;
+      height: 10vh;
+    }
+
+    form div {
+      margin-top: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Your Glass Order</h1>
+
+  <form action="mailto:michael@marolt.comt?subject=Glas Order" method="post" enctype="text/plain">
+    <h2>Kontaktdaten: </h2>
+
+    <div>
+      <label for="titel">Titel:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="tiel" name="titel">
+      </label>
+    </div>
+
+    <div>
+      <label for="vname">Vorname:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="vname" name="vname">
+      </label>
+    </div>
+    <label for="name">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" id="name" name="name">
+    </label>
+    <div>
+
+      <label for="adr">Adresse:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="adr" name="adr">
+      </label>
+    </div>
+    <div>
+      <label>Mobilnummer:
+        <input type="tel" name="MobilNummer" placeholder="+43">
+      </label>
+    </div>
+    <div>
+      <label>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" name="email">
+      </label>
+    </div>
+  </form>
+
+  <h2>Glass: </h2>
+
+  <form>
+    <label for="Menge">
+      Menge:
+      <input id="menge" type="number" min="1" max="10" step="1" value="1">
+    </label><br>
+
+
+    <label for="groesse">
+      Größe:
+      <input id="groesse" type="number" min="100" max="5000" step="1" value="175">
+      cm
+    </label>
+
+
+    </br>Farbe
+    <input type="color" value="#ff0000">
+
+    </br>Sonstiges:
+    <textarea id="msg" name="user_message" placeholder="Write your message here"></textarea>
+
+    <br>
+    <br>
+
+    <input type="reset">
+    <input type="submit">
+  </form>
+
+
+</body>
+
+</html>

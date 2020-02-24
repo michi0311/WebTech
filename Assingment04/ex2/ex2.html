@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+
+    <script>
+        let filter = 
+        filterArray=>{
+            let ret = new Array();
+            for(entry in filterArray){
+                if(filterArray[entry]>0 && Number.isInteger(filterArray[entry])){
+                    ret.push(filterArray[entry]*filterArray[entry]);
+                }
+            }
+            return ret
+        }
+
+
+        let test = [1,2,3,-1,-2,4,5];
+        var filtered = filter(test)
+       console.log(filtered);
+        
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+    "database": {
+        "host": "localhost",
+        "user": "gallery_root",
+        "password": "password",
+        "db": "webtech19gallery"
+    },
+    "server": {
+        "host": "localhost",
+        "port": 3000
+    },
+    "auth": {
+        "jwt_key": "secret",
+        "expiration": "1h"
+    }
+}

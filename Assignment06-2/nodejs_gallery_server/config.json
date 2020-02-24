@@ -1,0 +1,12 @@
+{
+    "database": {
+        "host": "localhost",
+        "user": "gallery_root",
+        "password": "password",
+        "db": "webtech19gallery"
+    },
+    "server": {
+        "host": "localhost",
+        "port": 4000
+    }
+}

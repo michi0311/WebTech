@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "4800e608-bb18-4fed-9b70-1b9c5ca0083f",
+		"name": "WebTech7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/books",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Book by ISBN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/books/1933988673",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"books",
+						"1933988673"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rent book by isbn",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/books/rent/1933988673",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"books",
+						"rent",
+						"1933988673"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "return book by isbn",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/books/rent/1933988673",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"books",
+						"rent",
+						"1933988673"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/books/create",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"books",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete Book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/books/16172905723",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"books",
+						"16172905723"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find Book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

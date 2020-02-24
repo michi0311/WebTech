@@ -1,0 +1,111 @@
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <style>
+      input:invalid {
+         color: red;
+      }
+
+      textarea:invalid {
+         color: red;
+      }
+   </style>
+
+   <script src="calculate.js" defer></script>
+
+
+</head>
+
+<body>
+   <h1>Your Glass Order</h1>
+
+   <form action="mailto:yourmail@edu.aau.at?subject=Glas Order" method="post" enctype="text/plain">
+      <fieldset>
+         <legend>Contact Data</legend>
+         <select id="title" name="title">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="Mr">Mr.</option>
+            <option value="Ms">Ms.</option>
+            <option value="Dr.">Dr.</option>
+            <option value="Prof.">Prof.</option>
+         </select>
+         <label for="title">Title</label><br>
+
+         <input type="text" id="name" name="name" placeholder="John Doe" required>
+         <label for="name">Last Name</label><br>
+
+         <input type="text" id="street" name="street" placeholder="Main Street 7" required>
+         <label for="street">Street</label><br>
+
+         <input type="text" id="zip" name="zip" placeholder="1234" required>
+         <label for="zip">ZIP</label><br>
+
+         <input type="text" id="city" name="city" placeholder="Springfield" required>
+         <label for="city">City</label><br>
+
+         <input type="email" id="email" name="email" placeholder="you@example.com" required>
+         <label for="email">Email</label><br>
+
+         <input type="tel" id="phone" pattern="[+]?[0-9]*" placeholder="numerical ('+' allowed)" name="phone">
+         <label for="phone">Phone</label><br>
+
+      </fieldset>
+      <fieldset>
+         <legend>Glass Specification</legend>
+         <input type="color" id="color" pattern="[0-9]*" name="color">
+         <label for="color">Color</label><br>
+         <!-- <input type="range" id="thickness" name="thickness" min="4" max="12" step="2"> -->
+
+         <legend>Thickness</legend>
+         <input type="radio" id="4mm" name="thickness" value="4" required>
+         <label for="4mm">4mm</label>
+
+         <input type="radio" id="6mm" name="thickness" value="6">
+         <label for="6mm">6mm</label>
+
+         <input type="radio" id="8mm" name="thickness" value="8">
+         <label for="8mm">8mm</label>
+
+         <input type="radio" id="12mm" name="thickness" value="12">
+         <label for="12mm">12mm</label>
+
+         <legend>Size</legend>
+         <input type="number" id="width" name="width" step="1" min="0" max="200" required>
+         <label for="width">Width in cm</label>
+         <input type="number" id="height" name="height" step="1" min="0" max="200" required>
+         <label for="height">Height in cm</label><br />
+
+
+         <legend>Quantity</legend>
+         <select id="Qty" name="Quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+         </select>
+         <label for="Qty">pane(s)</label><br>
+
+         <legend>Price</legend>
+         <input id="price" type="text" readonly>
+
+      </fieldset>
+
+      <fieldset>
+         <legend>Final Comments</legend>
+         <textarea placeholder="your final remarks" maxlength="700" name="comment" rows="10" cols="50"></textarea>
+      </fieldset>
+      <input type="submit">
+      <input type="reset">
+   </form>
+
+
+</body>
+
+</html>
